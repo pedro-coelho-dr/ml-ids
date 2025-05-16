@@ -1,21 +1,13 @@
-# ML-IDS
+# ml-ids
 
-Este projeto é um Sistema de Detecção de Intrusos (IDS) utilizando técnicas de Machine Learning.
+Projeto da disciplina de Machine Learning (Ciência da Computação - CESAR School).
 
-## Objetivo
+Objetivo: aplicar e testar algoritmos de aprendizado de máquina em detecção de intrusão (IDS), com foco em reprodutibilidade e documentação.
 
-Desenvolver e avaliar modelos de aprendizado de máquina para identificar atividades suspeitas em redes de computadores.
 
-## Estrutura do Projeto
+https://www.anaconda.com/docs/getting-started/miniconda/install
 
-- `data/` — Conjunto de dados utilizados para treinamento e teste.
-- `notebooks/` — Jupyter Notebooks para exploração e experimentos.
-- `src/` — Código-fonte dos modelos e utilitários.
-- `tests/` — Testes automatizados.
-
-## Como usar
-
-1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/ml-ids.git
-   cd ml-ids
+   conda env create -f environment.yml
+   conda activate ml-ids
+   ```
