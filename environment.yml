@@ -1,0 +1,5 @@
+name: ml-ids
+channels:
+  - defaults
+dependencies:
+  - python=3.11
