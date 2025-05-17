@@ -27,6 +27,14 @@
 - Subconjuntos disponíveis: `KDDTrain+`, `KDDTrain+_20Percent`, `KDDTest+`, `KDDTest-21`.
 
 
+| Arquivo                   | Descrição                                                                 | Uso Típico                          |
+|---------------------------|---------------------------------------------------------------------------|-------------------------------------|
+| `KDDTrain+.txt`           | Conjunto completo de treino com labels e nível de dificuldade.            | Treinamento do modelo.              |
+| `KDDTrain+_20Percent.txt` | Subconjunto de 20% do treino, balanceado e mais leve.                     | Testes rápidos ou tuning.           |
+| `KDDTest+.txt`            | Conjunto completo de teste com labels e nível de dificuldade.            | Avaliação padrão do modelo.         |
+| `KDDTest-21.txt`          | Subconjunto do teste com registros de dificuldade máxima removidos.      | Avaliação em cenário menos complexo. |
+
+
 
 ## Conclusão
 
