@@ -1,0 +1,15 @@
+def extract_arff_columns(filepath):
+    columns = []
+    with open(filepath, 'r') as f:
+        for line in f:
+            line = line.strip().lower()
+            if line.startswith('@attribute'):
+                parts = line.split()
+                if len(parts) >= 2:
+                    columns.append(parts[1])
+            elif line.startswith('@data'):
+                break
+    return columns
+
+cols = extract_arff_columns('KDDTest-21.arff')
+print(cols)
