@@ -8,6 +8,7 @@ Objetivo: aplicar e testar algoritmos de aprendizado de máquina em detecção d
 https://www.anaconda.com/docs/getting-started/miniconda/install
 
    ```bash
+   conda config --set auto_activate_base false 
    conda env create -f environment.yml
    conda activate ml-ids
    ```
