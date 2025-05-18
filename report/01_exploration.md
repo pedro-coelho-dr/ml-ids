@@ -48,25 +48,31 @@ Durante a análise exploratória, foram identificadas três variáveis categóri
 
 ### Algoritmos Selecionados
 
-1. **Random Forest**  
-   - Ensemble robusto, bom desempenho, resistente a overfitting.  
-   - `sklearn.ensemble.RandomForestClassifier`
+1. **Logistic Regression**  
+   - Linear, interpretável, útil para limitações de dados não-lineares.  
+   - `sklearn.linear_model.LogisticRegression`
 
-2. **MLP (Multilayer Perceptron)**  
-   - Rede neural simples, avalia capacidade de generalização.  
-   - `sklearn.neural_network.MLPClassifier`
+2. **k-Nearest Neighbors (k-NN)**  
+   - Baseline simples, sem fase de treino.  
+   - `sklearn.neighbors.KNeighborsClassifier`
 
 3. **Decision Tree**  
    - Interpretação fácil, lógica explícita.  
    - `sklearn.tree.DecisionTreeClassifier`
 
-4. **k-Nearest Neighbors (k-NN)**  
-   - Baseline simples, sem fase de treino.  
-   - `sklearn.neighbors.KNeighborsClassifier`
+4. **Random Forest**  
+   - Ensemble robusto, bom desempenho, resistente a overfitting.  
+   - `sklearn.ensemble.RandomForestClassifier`
 
-5. **Logistic Regression**  
-   - Linear, interpretável, útil para limitações de dados não-lineares.  
-   - `sklearn.linear_model.LogisticRegression`
+5. **MLP (Multilayer Perceptron)**  
+   - Rede neural simples, avalia capacidade de generalização.  
+   - `sklearn.neural_network.MLPClassifier`
+
+
+
+
+
+
 
 ##### Algoritmos do artigo original não utilizados
 
