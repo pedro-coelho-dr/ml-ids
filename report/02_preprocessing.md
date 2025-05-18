@@ -16,13 +16,9 @@ Esses arquivos foram derivados dos originais `.txt` e `.arff`, mantendo a estrut
 
 ### Etapas do Pré-processamento
 
-#### 1. Remoção da Coluna `difficulty`
+#### 1. Remoção da Coluna `difficulty` e `num_outbound_cmds`
 
-A coluna `difficulty` foi removida por não ser relevante para a modelagem, conforme indicado na documentação original do dataset.
-
-```python
-df.drop(columns=["difficulty"], inplace=True)
-```
+As colunas `difficulty` e `num_outbound_cmds` foram removidas por não serem relevantes para a modelagem.
 
 
 #### 2. Agrupamento da Classe `class` em Categorias
@@ -57,9 +53,7 @@ Valores menos frequentes em `service` foram agrupados como `"other"` para reduzi
 
 Após a codificação, colunas booleanas foram convertidas explicitamente para valores inteiros (`0` ou `1`) para garantir compatibilidade com modelos do `scikit-learn`.
 
-```python
-df_final = df_final.astype({col: int for col in df_final.select_dtypes('bool').columns})
-```
+
 
 ### Normalização
 
