@@ -1,8 +1,8 @@
-## Dataset Utilizado
+## Dataset
 
 O NSL-KDD é uma versão corrigida do KDD'99 criada pelo ISCX (University of New Brunswick) para resolver problemas como redundância e viés em modelos de detecção de intrusão.
 
-A versão **oficial hospedada no site da UNB** não está mais disponível para download direto. Por isso, foi utilizada a versão publicada no **Kaggle** por [M. Hassan Zaib](https://www.kaggle.com/datasets/hassan06/nslkdd), que contém exatamente os mesmos arquivos descritos na documentação original (KDDTrain+, KDDTest+, etc.), com estrutura, colunas e conteúdo idênticos.
+A versão **oficial hospedada no site da UNB** não está mais disponível para download direto. Por isso, foi utilizada a versão publicada no **Kaggle** por M. Hassan Zaib, que contém exatamente os mesmos arquivos descritos na documentação original (KDDTrain+, KDDTest+, etc.), com estrutura, colunas e conteúdo idênticos.
 
 A equivalência foi confirmada comparando:
 - Arquivos `.txt` e `.arff` (mesmo número de colunas e registros)

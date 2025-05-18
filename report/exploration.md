@@ -1,10 +1,14 @@
 
+## Exploração do Dataset
 
-## Agrupamento de Ataques
+Notebook: [notebooks/01_exploration.ipynb](../notebooks/01_exploration.ipynb)
+
+
+### Agrupamento de Ataques
 
 As classes do NSL-KDD foram agrupadas em 5 categorias principais, conforme metodologia do artigo base. Isso reduz a complexidade do problema e facilita a comparação entre modelos.
 
-### Categorias e Classes
+#### Categorias e Classes
 
 | Categoria | Descrição | Classes incluídas |
 |-----------|-----------|------------------|
@@ -16,7 +20,7 @@ As classes do NSL-KDD foram agrupadas em 5 categorias principais, conforme metod
 
 > Nota: Todas as classes do NSL-KDD estão cobertas pelo mapeamento.
 
-#### Distribuição das Categorias
+##### Distribuição das Categorias
 
 | Categoria | Total de Amostras |
 |-----------|-------------------|
@@ -27,7 +31,7 @@ As classes do NSL-KDD foram agrupadas em 5 categorias principais, conforme metod
 | U2R       | 52                |
 
 
-## Colunas Categóricas
+### Colunas Categóricas
 
 Durante a análise exploratória, foram identificadas três variáveis categóricas relevantes para modelagem:
 
@@ -41,11 +45,8 @@ Durante a análise exploratória, foram identificadas três variáveis categóri
 > - Reduzir dimensionalidade e ruído em `service` usando agrupamento dos menos frequentes em "other".
 > - `protocol_type` e `flag` são adequados para one-hot sem pré-agrupamento.
 
----
 
-## Algoritmos Selecionados
-
-A seguir, os algoritmos escolhidos para experimentação, com breve justificativa:
+### Algoritmos Selecionados
 
 1. **Random Forest**  
    - Ensemble robusto, bom desempenho, resistente a overfitting.  
@@ -67,7 +68,7 @@ A seguir, os algoritmos escolhidos para experimentação, com breve justificativ
    - Linear, interpretável, útil para limitações de dados não-lineares.  
    - `sklearn.linear_model.LogisticRegression`
 
-#### Algoritmos do artigo original não utilizados
+##### Algoritmos do artigo original não utilizados
 
 | Algoritmo       | Motivo do Descarte                         |
 |-----------------|--------------------------------------------|
@@ -77,7 +78,7 @@ A seguir, os algoritmos escolhidos para experimentação, com breve justificativ
 | BayesNet        | Sem suporte direto em Python               |
 
 
-## Estatísticas Gerais do Dataset
+### Estatísticas Gerais do Dataset
 
 - Total de amostras: 125.973
 - Total de colunas: 43
