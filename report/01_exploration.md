@@ -68,12 +68,6 @@ Durante a análise exploratória, foram identificadas três variáveis categóri
    - Rede neural simples, avalia capacidade de generalização.  
    - `sklearn.neural_network.MLPClassifier`
 
-
-
-
-
-
-
 ##### Algoritmos do artigo original não utilizados
 
 | Algoritmo       | Motivo do Descarte                         |
@@ -92,3 +86,23 @@ Durante a análise exploratória, foram identificadas três variáveis categóri
 - Features categóricas: 5
 - Classes originais distintas (`class`): 23
 - Categorias agrupadas (`attack_category`): 5
+
+
+### Diferença entre Conjuntos de Treinamento e Teste
+
+Durante a exploração do dataset, foi identificado que o conjunto de teste (`KDDTest+`) contém **mais classes originais** na coluna `class` do que o conjunto de treino (`KDDTrain+`).
+
+| Conjunto     | Classes distintas (`class`) |
+|--------------|-----------------------------|
+| Treinamento  | 23                          |
+| Teste        | 38                          |
+
+As 15 classes extras no conjunto de teste não aparecem no treino e representam ataques que o modelo **nunca viu** durante o aprendizado supervisionado.
+
+#### Classes exclusivas do conjunto de teste
+
+`apache2`, `httptunnel`, `mailbomb`, `mscan`, `named`, `processtable`, `ps`, `saint`, `sendmail`, `snmpgetattack`, `snmpguess`, `sqlattack`, `udpstorm`, `worm`, `xlock`, `xsnoop`, `xterm`
+
+> Essas classes foram devidamente mapeadas para uma das 5 categorias principais (`DoS`, `Probe`, `R2L`, `U2R`), mas sua ausência no treinamento **impacta negativamente o desempenho do modelo**, especialmente no **recall das categorias R2L e U2R**.
+
+Essa diferença reflete um cenário mais desafiador e realista de generalização, e deve ser considerada ao interpretar as métricas de avaliação no conjunto de teste.
