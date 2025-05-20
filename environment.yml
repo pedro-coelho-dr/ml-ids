@@ -2,9 +2,10 @@ name: ml-ids
 channels:
   - defaults
 dependencies:
+  - seaborn
+  - matplotlib
+  - scikit-learn
   - python=3.11
   - pandas
-  - scikit-learn
   - ipykernel
-  - matplotlib
-  - seaborn
+prefix: /home/corisco/miniconda3/envs/ml-ids

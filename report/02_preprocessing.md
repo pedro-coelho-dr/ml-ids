@@ -9,8 +9,6 @@ Os seguintes arquivos `.csv` com cabeçalhos foram utilizados como entrada, loca
 
 - `KDDTrain+.csv`
 - `KDDTest+.csv`
-- `KDDTrain+_20Percent.csv`
-- `KDDTest-21.csv`
 
 Esses arquivos foram derivados dos originais `.txt` e `.arff`, mantendo a estrutura com 43 colunas.
 
